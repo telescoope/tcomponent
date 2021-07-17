@@ -1,0 +1,59 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "tcomponent-example",
+      "homepage": ".",
+      "version": "0.0.0",
+      "private": true,
+      "scripts": {
+        "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
+        "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
+        "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
+        "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
+      },
+      "dependencies": {
+        "localforage": "^1.9.0",
+        "react": "link:../node_modules/react",
+        "react-dom": "link:../node_modules/react-dom",
+        "react-scripts": "link:../node_modules/react-scripts",
+        "redux": "^4.1.0",
+        "redux-logger": "^3.0.6",
+        "redux-persist": "^6.0.0",
+        "redux-thunk": "^2.3.0",
+        "tcomponent": "link:.."
+      },
+      "devDependencies": {
+        "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
+      },
+      "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+      ]
+    },
+    "prefix": "/usr/local/var/www/tcomponent/example"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/var/root/.pnpm-store/v3",
+    "virtualStoreDir": "/usr/local/var/www/tcomponent/example/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/usr/local/var/www/tcomponent/example",
+    "stage": "resolution_started"
+  },
+  "4 error pnpm": {
+    "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+    "pkgsStack": [],
+    "err": {
+      "name": "Error",
+      "message": "No package.json (or package.yaml, or package.json5) was found in \"/usr/local/var/www/tcomponent/node_modules/react\".",
+      "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+      "stack": "Error: No package.json (or package.yaml, or package.json5) was found in \"/usr/local/var/www/tcomponent/node_modules/react\".\n    at readProjectManifest (/private/var/root/.nvm/versions/node/v14.17.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.8.0/node_modules/pnpm/dist/pnpm.cjs:39698:13)\n    at async Object.readProjectManifestOnly (/private/var/root/.nvm/versions/node/v14.17.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.8.0/node_modules/pnpm/dist/pnpm.cjs:39702:28)\n    at async Object.resolveLocal [as default] (/private/var/root/.nvm/versions/node/v14.17.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.8.0/node_modules/pnpm/dist/pnpm.cjs:78449:35)\n    at async Object.resolve (/private/var/root/.nvm/versions/node/v14.17.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.8.0/node_modules/pnpm/dist/pnpm.cjs:79354:309)\n    at async run (/private/var/root/.nvm/versions/node/v14.17.1/pnpm-global/5/node_modules/.pnpm/pnpm@6.8.0/node_modules/pnpm/dist/pnpm.cjs:65439:23)"
+    }
+  }
+}
