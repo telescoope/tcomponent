@@ -1,6 +1,6 @@
 {
   "name": "tcomponent",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Reusable function for rapid react development",
   "author": "aldoetobex",
   "license": "MIT",
@@ -15,8 +15,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle-crl --css-modules false --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --css-modules false --no-compress --format modern,cjs",
+    "build": "microbundle-crl --css-modules false --compress --format modern,cjs",
+    "start": "microbundle-crl watch --css-modules false --compress --format modern,cjs",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
     "test:lint": "eslint .",
