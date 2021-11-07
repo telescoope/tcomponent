@@ -1,6 +1,6 @@
 {
   "name": "tcomponent",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Reusable function for rapid react development",
   "author": "aldoetobex",
   "license": "MIT",
@@ -51,6 +51,7 @@
     "src"
   ],
   "dependencies": {
+    "currency.js": "^2.0.4",
     "immutability-helper": "3.1.1",
     "lodash": "4.17.21",
     "slugify": "^1.6.1"

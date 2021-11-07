@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react'
 
-import { defaultFilterData, secureData, setAuthHeader } from 'tcomponent'
+import {
+  defaultFilterData,
+  secureData,
+  setAuthHeader,
+  numberFormat
+} from 'tcomponent'
 
 import { useSelector, useDispatch } from 'react-redux'
 
@@ -130,6 +135,7 @@ function App() {
   return (
     <div style={{ padding: '0px 20px' }}>
       <h1>tcomponent - telescoope.org</h1>
+      <p>Number : {numberFormat(1234.552, 'IDR')}</p>
     </div>
   )
 }
