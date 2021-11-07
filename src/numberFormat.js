@@ -5,6 +5,6 @@ export default function numberFormat(angka, prefix = '') {
     symbol: prefix + ' ',
     separator: '.',
     decimal: ',',
-    precision: 2
+    precision: angka % 1 != 0 ? 2 : 0
   }).format()
 }
