@@ -15,6 +15,12 @@ function findArrayName(name, data) {
     val = !isUndefined(data[name]) && !isNull(data[name]) ? data[name] : null
   }
 
+  try {
+    if (isNull(val)) {
+      val = !isUndefined(data[name]) && !isNull(data[name]) ? data[name] : null
+    }
+  } catch (e) {}
+
   return val
 }
 
