@@ -12,7 +12,7 @@ function findArrayName(name, data) {
 
     val = !isUndefined(data[y][n]) && !isNull(data[y][n]) ? data[y][n] : null
   } catch (e) {
-    val = !isUndefined(data[name]) && !isNull(data[name]) ? data[name] : null
+    // val = !isUndefined(data[name]) && !isNull(data[name]) ? data[name] : null
   }
 
   try {
